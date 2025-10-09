@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-10T00:37:10 IST" name="Default suite" finished-at="2025-10-10T00:37:10 IST" duration-ms="168">
+    <groups>
+    </groups>
+    <test started-at="2025-10-10T00:37:10 IST" name="Default test" finished-at="2025-10-10T00:37:10 IST" duration-ms="168">
+      <class name="testing_extra.Demo3Test">
+        <test-method signature="Create()[pri:0, instance:testing_extra.Demo3Test@235834f2]" started-at="2025-10-10T00:37:10 IST" name="Create" finished-at="2025-10-10T00:37:10 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create -->
+        <test-method signature="Modify()[pri:0, instance:testing_extra.Demo3Test@235834f2]" started-at="2025-10-10T00:37:10 IST" name="Modify" finished-at="2025-10-10T00:37:10 IST" depends-on-methods="testing_extra.Demo3Test.Create" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Modify -->
+        <test-method signature="Deactivate()[pri:0, instance:testing_extra.Demo3Test@235834f2]" started-at="2025-10-10T00:37:10 IST" name="Deactivate" finished-at="2025-10-10T00:37:10 IST" depends-on-methods="testing_extra.Demo3Test.Modify" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deactivate -->
+      </class> <!-- testing_extra.Demo3Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

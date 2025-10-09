@@ -9,9 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
-public class CreateTroubleTicketsText {
-	public static void main(String[] args) throws InterruptedException {
+public class TroubleTicketsText {
+
+	@Test
+	public void CreateTroubleTickets() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -34,7 +37,7 @@ public class CreateTroubleTicketsText {
 
 		// Title Text field
 		WebElement title = driver.findElement(By.name("ticket_title"));
-		String tit="Automation With Anukrati";
+		String tit = "Automation With Anukrati";
 		title.sendKeys(tit);
 
 		// Priority dropDown
@@ -125,24 +128,22 @@ public class CreateTroubleTicketsText {
 		// Verfication
 		String actTitle = driver.findElement(By.id("dtlview_Title")).getText();
 		System.out.println(actTitle);
-		if (actTitle.equals(tit)){
+		if (actTitle.equals(tit)) {
 			System.out.println("Create title sucessfully.....!");
 		} else {
-		
+
 			System.out.println("Failed");
 		}
-		
-		//hover on administration.
-		 WebElement administration= driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
-		 Actions act=new Actions(driver);
-		 act.moveToElement(administration).click().build().perform();
-		 Thread.sleep(2000);
-		
-		 //sign out
-		 driver.findElement(By.linkText("Sign Out")).click();
-		 
-		 
-		 
+
+		// hover on administration.
+		WebElement administration = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
+		Actions act = new Actions(driver);
+		act.moveToElement(administration).click().build().perform();
+		Thread.sleep(2000);
+
+		// sign out
+		driver.findElement(By.linkText("Sign Out")).click();
+
 		Thread.sleep(2000);
 		driver.quit();
 
