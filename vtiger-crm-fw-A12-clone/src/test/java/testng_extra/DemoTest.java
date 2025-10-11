@@ -1,4 +1,4 @@
-package testing_extra;
+package testng_extra;
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;
