@@ -1,0 +1,22 @@
+<suite parallel="tests" name ="suite">
+	<test paralle="tests" name="testRunner1">
+		<classes>
+		<parameter name="bro" value="chrome"/>
+		<class name="types_of_execution.Demo3Test"/>
+		</classes>
+	</test>
+	
+	<test parallel="tests" name="testRunner2">
+		<classes>
+		<parameter name="bro" value="edge"/>
+		<class name="types_of_execution.Demo4Test"/>
+		</classes>
+	</test>
+	
+	<test parallel="tests" name="testRunner3">
+		<classes>
+		<parameter name="bro" value="firefox"/>
+		<class name="types_of_execution.Demo5Test"/>
+		</classes>
+	</test>
+</suite>
