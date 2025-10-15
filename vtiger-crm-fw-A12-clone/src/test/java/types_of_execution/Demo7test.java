@@ -1,0 +1,29 @@
+package types_of_execution;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Demo7test {
+	
+	@Test(groups="reg")
+	public static void Case7() throws InterruptedException {
+		WebDriver driver= new ChromeDriver();
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	@Test(groups="smoke")
+	public static void Case71() {
+		WebDriver driver=new ChromeDriver();
+		driver.quit();
+	}
+	@Test(groups="reg")
+	public static void Case701() throws InterruptedException {
+		WebDriver driver =new ChromeDriver();
+		Thread.sleep(2000);
+		driver.quit();
+	}
+}

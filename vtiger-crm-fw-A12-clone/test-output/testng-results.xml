@@ -1,54 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-13T23:37:12 IST" name="suite" finished-at="2025-10-13T23:37:33 IST" duration-ms="21051">
+  <suite started-at="2025-10-15T11:40:04 IST" name="Default suite" finished-at="2025-10-15T11:40:04 IST" duration-ms="149">
     <groups>
     </groups>
-    <test started-at="2025-10-13T23:37:12 IST" name="testRunner1" finished-at="2025-10-13T23:37:25 IST" duration-ms="12442">
-      <class name="types_of_execution.Demo3Test">
-        <test-method signature="Case3(java.lang.String)[pri:0, instance:types_of_execution.Demo3Test@7c7b252e]" started-at="2025-10-13T23:37:12 IST" name="Case3" finished-at="2025-10-13T23:37:25 IST" duration-ms="12339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-10-15T11:40:04 IST" name="Default test" finished-at="2025-10-15T11:40:04 IST" duration-ms="149">
+      <class name="configuration_ann_extra.ContactTest">
+        <test-method signature="createContact()[pri:0, instance:configuration_ann_extra.ContactTest@55141def]" started-at="2025-10-15T11:40:04 IST" name="createContact" finished-at="2025-10-15T11:40:04 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Case3 -->
-      </class> <!-- types_of_execution.Demo3Test -->
-    </test> <!-- testRunner1 -->
-    <test started-at="2025-10-13T23:37:12 IST" name="testRunner2" finished-at="2025-10-13T23:37:26 IST" duration-ms="13384">
-      <class name="types_of_execution.Demo4Test">
-        <test-method signature="Case4(java.lang.String)[pri:0, instance:types_of_execution.Demo4Test@4116aac9]" started-at="2025-10-13T23:37:12 IST" name="Case4" finished-at="2025-10-13T23:37:26 IST" duration-ms="13285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- createContact -->
+        <test-method signature="deleteContact()[pri:0, instance:configuration_ann_extra.ContactTest@55141def]" started-at="2025-10-15T11:40:04 IST" name="deleteContact" finished-at="2025-10-15T11:40:04 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Case4 -->
-      </class> <!-- types_of_execution.Demo4Test -->
-    </test> <!-- testRunner2 -->
-    <test started-at="2025-10-13T23:37:12 IST" name="testRunner3" finished-at="2025-10-13T23:37:33 IST" duration-ms="21051">
-      <class name="types_of_execution.Demo5Test">
-        <test-method signature="Case5(java.lang.String)[pri:0, instance:types_of_execution.Demo5Test@1a677343]" started-at="2025-10-13T23:37:12 IST" name="Case5" finished-at="2025-10-13T23:37:33 IST" duration-ms="20952" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Case5 -->
-      </class> <!-- types_of_execution.Demo5Test -->
-    </test> <!-- testRunner3 -->
-  </suite> <!-- suite -->
+        </test-method> <!-- deleteContact -->
+      </class> <!-- configuration_ann_extra.ContactTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
